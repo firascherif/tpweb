@@ -36,7 +36,7 @@ h3 {
 }
 
 .rating {
-    color: orange;
+    color: goldenrod;
     text-decoration: none;
     font-size: 3em;
 
@@ -73,15 +73,18 @@ text{
     box-shadow: 6px 6px 6px #D0D0D0 inset;
 }
 #tableau tr td {
-    background: #BBB4B4;
+    background: #555;
     font-size: 16px;
-    color: black;
+    color: white;
     text-align:center;
 }
 #tableau tbody tr:hover td {
-    background: #d0dafd;
-    color: darkred;
+    background: darkred;
 }
 #tableau a:hover {
     text-decoration:underline;
+}
+
+#white{
+    color: white;
 }
