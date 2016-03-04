@@ -36,15 +36,15 @@ h3 {
 }
 
 .rating {
-   color: orange;
-   text-decoration: none;
-   font-size: 3em;
+    color: orange;
+    text-decoration: none;
+    font-size: 3em;
 
 }
 .star {
-   color: orange;
-   text-decoration: none;
-   font-size: 1em;
+    color: lightyellow;
+    text-decoration: none;
+    font-size: 1em;
 
 }
 
@@ -57,4 +57,31 @@ text{
     stroke-width: 0.5px;
 }
 
+#tableau {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
 
+#tableau td {
+    padding: 8px;
+    border-bottom: 1px solid #D0D0D0;
+    border-top: 1px solid #D0D0D0 ;
+    box-shadow: 6px 6px 6px #D0D0D0 inset;
+}
+#tableau tr td {
+    background: #BBB4B4;
+    font-size: 16px;
+    color: black;
+    text-align:center;
+}
+#tableau tbody tr:hover td {
+    background: #d0dafd;
+    color: darkred;
+}
+#tableau a:hover {
+    text-decoration:underline;
+}
