@@ -1,0 +1,60 @@
+
+.navbar {
+    background-color: #555;
+    color: white;
+    margin-bottom: 10;
+    border-radius: 0;
+}
+
+.row.content {height: 460px}
+
+.sidenav {
+    padding-top: 40px;
+    height: 100%;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:67px;
+    width:100%;
+}
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;} 
+}
+h3 {
+    color: rgb(0, 0, 255);
+}
+
+.rating {
+   color: orange;
+   text-decoration: none;
+   font-size: 3em;
+
+}
+.star {
+   color: orange;
+   text-decoration: none;
+   font-size: 1em;
+
+}
+
+#svg{
+    border-color: green;
+}
+text{
+    stroke:#00CC00;
+    font-size: 16px;
+    stroke-width: 0.5px;
+}
+
+
