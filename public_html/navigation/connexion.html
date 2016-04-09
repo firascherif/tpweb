@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
-        <script type="text/javascript" src="JS/login.js"></script>
+        <script type="text/javascript" src="../JS/login.js"></script>
     </head>
 
     <body background="../Images/background.jpg">
@@ -24,15 +24,11 @@
             <div class="row content">
                 <div class="footer-col col-md-2"></div>
                 <div class="footer-col col-md-8">
-                    <form name="loginform" onsubmit="validateForm()" action="infoStade.html" method="post">                 
-                        <div class="form-group">
-                            <label>Login:</label>
-                            <input type="text" name="usr" class="form-control" placeholder="Enter nom du stade">
-                        </div>
-                        <div class="form-group">
-                            <label>mot de passe:</label>
-                            <input type="password" name="pword" type="info" class="form-control" placeholder="Enter les infomrations">
-                        </div> 
+                    <form name="loginform" method="get" onclick="return validateForm();" action="infoStade.html">                                     
+                        <label>Login:</label>
+                        <input type="text" id="usr" class="form-control" placeholder="Enter nom du stade">                       
+                        <label>mot de passe:</label>
+                        <input type="password" id="pword" type="info" class="form-control" placeholder="Enter les infomrations">        
                         <input type="submit" value="Login" class="btn btn-success">
                     </form>
                 </div>
