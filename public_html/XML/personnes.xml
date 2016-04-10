@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="../css/personnes.css"?>
+
+<personnes>
+    <personne>
+        <nom>cherif</nom>
+        <prenom>firas</prenom>
+        <domaine>informatique</domaine>     
+    </personne>
+    <personne>
+        <nom>brown</nom>
+        <prenom>Mike</prenom>
+        <domaine>administration</domaine>     
+    </personne>
+    <personne>
+        <nom>aissa</nom>
+        <prenom>seif</prenom>
+        <domaine>recruteur</domaine>     
+    </personne>
+    <personne>
+        <nom>laflamme</nom>
+        <prenom>patrique</prenom>
+        <domaine>securite</domaine>     
+    </personne>
+    <personne>
+        <nom>dialo</nom>
+        <prenom>francois</prenom>
+        <domaine>analyste</domaine>     
+    </personne>           
+</personnes>
