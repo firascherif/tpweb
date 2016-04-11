@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+    <head>
         <title>TP1</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/jquery.dataTables.css">
+        
+        <script type="text/javascript" src="../JS/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../JS/jquery.dataTables.js"></script>
+        <script type="text/javascript" src="../JS/dataTable.js"></script>
 
     </head>
 
@@ -19,10 +24,45 @@
             </div>
         </nav>
 
-        <div class="container-fluid text-center">    
-                <div class="col-sm-10 text-left"> 
-                    <h3>Information du stade enregistrées.</h3>
-                </div>
+        <div class="container-fluid text-center">  
+            <div class="col-sm-2 text-left"> </div>
+            <div class="col-sm-8 text-left"> 
+                <table class="display">
+                    <thead>
+                        <tr>
+                            <th>Nom du stade</th>
+                            <th>Date mise en service</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GoldField</td>
+                            <td>2011</td>
+
+                        </tr>
+                        <tr>
+                            <td>Olympique Richelieu</td>
+                            <td>2012</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>SaltMountain</td>
+                            <td>2013</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>SuperKick</td>
+                            <td>2014</td>
+                        </tr>
+                        <tr>
+                            <td>Ultima</td>
+                            <td>2016</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </body>
 </html>

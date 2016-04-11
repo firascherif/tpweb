@@ -31,7 +31,7 @@ $(function() {
                     "children": false,
                     "liAttributes": null,
                     "aAttributes": null
-                }, {
+                },{
                     "id": "2",
                     "text": "France",
               
@@ -67,7 +67,7 @@ $(function() {
                     "children": false,
                     "liAttributes": null,
                     "aAttributes": null
-                }, {
+                },{
                     "id": "4",
                     "text": "Japon",
                 
