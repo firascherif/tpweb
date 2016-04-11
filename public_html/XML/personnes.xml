@@ -26,5 +26,15 @@
         <nom>dialo</nom>
         <prenom>francois</prenom>
         <domaine>analyste</domaine>     
-    </personne>           
+    </personne> 
+    <personne>
+        <nom>forest</nom>
+        <prenom>emilie</prenom>
+        <domaine>marketing</domaine>     
+    </personne>
+    <personne>
+        <nom>alba</nom>
+        <prenom>joe</prenom>
+        <domaine>finance</domaine>     
+    </personne>          
 </personnes>

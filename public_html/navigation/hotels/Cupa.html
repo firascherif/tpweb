@@ -23,7 +23,9 @@
 
     <div class="container-fluid text-center">    
         <div class="row content">
-            <img src="../../Images/hotel5.jpeg" />
+            <button type="button" class="btn btn-danger" onclick="Fermer()">Fermer</button>
+                <br><br>
+                <img src="../../Images/hotel5.jpeg" onload="animateImage()" id="image" style="position:relative;"/>
             <h3>Hotel Cupa Thalasso</h3>
             <div class="rating">★★★★ </div>
         </div>
@@ -73,5 +75,7 @@
 
     </footer>
 
+        <script type="text/javascript" src="../../JS/hotelAnimation.js"></script>      
+        <script type="text/javascript" src="../../JS/jquery-1.10.2.min.js"></script>
 </body>
 </html>
