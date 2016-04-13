@@ -169,7 +169,10 @@ text{
 #photopaysage{
     width: 900px;
     height: 300px;
-    animation: bounce 1.4s ease infinite 1s ;
+    animation: bounce  ;
+    animation-duration: 13s; 
+    animation-timing-function: ease;
+    animation-delay: 1s;
     //animation-delay:1s;
 }
 @keyframes bounce{
@@ -183,3 +186,10 @@ text{
   font-size: 20px;
 }
 
+.navigation{
+    padding-top: 13px;
+}
+
+.tooltip{
+     
+}

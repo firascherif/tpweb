@@ -1,0 +1,18 @@
+<form name='tonformulaire'>
+<input type='text' name='nomdetontext'>
+<input type='button' onClick='ttdonnees()' value='chercher valeur ! ' ><br>
+
+<p id='tonID'> résultat: </p>
+</form>
+
+<script>
+
+function ttdonnees() {
+var nombre= document.tonformulaire.nomdetontext.value; <!-- tu récupères-->
+
+var nombredouble= nombre; <!-- tu traites-->
+
+document.getElementById('tonID').innerHTML = nombredouble ; <!-- tu envoies le résultat dans ton paragraphe-->
+}
+
+</script>

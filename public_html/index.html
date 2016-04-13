@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <script type="text/javascript" src="JS/login.js"></script>
     </head>
 
     <body background="Images/background.jpg">
@@ -15,7 +16,15 @@
                 <div  class="col-sm-2 text-right-side">
                     <a href="index.html"><img src="Images/logo.jpg" class="img-circle"  width="60" height="60"></a>
                 </div>
-                <div class="col-sm-6 text-right-side"></div>
+                <div class="col-sm-6">
+                    <div class="navigation">
+                        <form name="loginform" method="get" onclick="return validateForm();" action="index.html">                                                       
+                            Login:  <input type="text" id="usr" placeholder="Enter nom">
+                            Mot de passe: <input type="password" id="pword" type="info"  placeholder="Enter mot de passe">        
+                            <input type="submit" value="Login" class="btn btn-primary" id="stockage" >
+                        </form>
+                    </div>
+                </div>
                 <div class="col-sm-4 text-right-side"> 
                     <ul class="nav navbar-nav">
                         <li><a href="index.html"><img src="Images/France.png"> Francais</a></li>
@@ -75,10 +84,10 @@
                     <div class="footer-col col-md-4"> Copyright &copy; 2016</div>
                     <div class="footer-col col-md-4">
                         <p>Realiser par : <a href="firas-cherif@hotmail.com">Firas CHERIF</a><span style="color:white;"> et </span><a href="fecteau-dorval.carolane@courrier.uqam.ca">Carolane Fecteau-Dorval</a></p></p>
-                                      
+
                         <p>
                             <a href="http://www.firascherif.com" >www.firascherif.com</a> </p>
-                            
+
                     </div>
                 </div>
             </div>

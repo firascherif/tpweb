@@ -7,6 +7,8 @@ function deactivateTooltips() {
     }
 
 }
+
+
 // La fonction ci-dessous permet de récupérer la "tooltip" 
 // qui correspond à notre input
 
@@ -131,32 +133,33 @@ check['adresse'] = function (id) {
 
 };
 
-(function () { // Utilisation d'une IIFE pour éviter les variables globales.
+(function () {
 
     var myForm = document.getElementById('myForm');
     var inputs = document.querySelectorAll(
-                 'input[type=text]');
+            'input[type=text]');
     var select = document.getElementById('acces');
-    
+
     select.addEventListener('change', function (e) {
-            check[e.target.id](); 
+        check[e.target.id]();
     }, false);
 
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].addEventListener('keyup', function (e) {
             check[e.target.id](e.target.id); // "e.target" représente 
-                                             // l'input actuellement modifié
+            // l'input actuellement modifié
         }, false);
     }
-    
+
     for (var i = 0; i < inputs.length; i++) {
         inputs[i].addEventListener('change', function (e) {
             check[e.target.name](); // "e.target" représente 
-                                             // l'input actuellement modifié
+            // l'input actuellement modifié
         }, false);
-    
-    };
-    
+
+    }
+    ;
+
     myForm.addEventListener('submit', function (e) {
 
         var result = true;
@@ -166,7 +169,7 @@ check['adresse'] = function (id) {
         }
 
         if (result) {
-             window.location = "../navigation/stadeMaj.html";
+            window.location = "../navigation/stadeMaj.html";
         }
 
         e.preventDefault();
@@ -188,3 +191,4 @@ check['adresse'] = function (id) {
 // Maintenant que tout est initialisé, on peut désactiver les "tooltips"
 
 deactivateTooltips();
+
