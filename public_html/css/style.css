@@ -154,7 +154,7 @@ text{
 }
 
 .Logo-Ville-St-Jean{
-    //margin-top:10px;
+    /*margin-top:10px;*/
     position: relative;
     width: 10px; 
     height: 10px;
@@ -173,7 +173,7 @@ text{
     animation-duration: 13s; 
     animation-timing-function: ease;
     animation-delay: 1s;
-    //animation-delay:1s;
+   
 }
 @keyframes bounce{
      from {transform: translateY(0);}

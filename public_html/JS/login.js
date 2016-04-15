@@ -1,6 +1,7 @@
 function validateForm() {
     var un = document.getElementById("usr").value;
     var pw = document.getElementById("pword").value;
+    var connection = JSON.Parse(localStorage.getItem("logins"));
     if (un == "admin" && pw == "inf2005"){
         return true;
     }

@@ -1,4 +1,5 @@
-var bd=null;//simulation base de donnees avec localStorage et json
+
+/*var bd=null;//simulation base de donnees avec localStorage et json
 function ajoutInfo()
 {
 	var section=$('input[name="section"]:first').val();
@@ -86,4 +87,4 @@ $(document).ready(function(){
 		$(this).parent().remove();
 		mettreAJourBdJson();
 	});
-});
+});*/
