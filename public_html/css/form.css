@@ -52,6 +52,8 @@ input:focus {
     margin-left: 20px;
     padding: 2px 4px;
     border: 1px solid #555;
-    background-color: #CCC;
+    background-color: red;
     border-radius: 4px;
+    color:white;
+    width:200px;
 }

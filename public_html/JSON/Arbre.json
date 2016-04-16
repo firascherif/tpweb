@@ -1,38 +1,77 @@
-{
-    "annee": "1998",
-    "children": [
-        {
-            "ville": "Paris",
-            "pays": "France"
-        }
-    ],
-    "annee": "1998",
-    "children": [
-        {
-            "ville": "Paris",
-            "pays": "France"
-        }
-    ],
-    "annee": "1998",
-    "children": [
-        {
-            "ville": "Paris",
-            "pays": "France"
-        }
-    ],
-    "annee": "1998",
-    "children": [
-        {
-            "ville": "Paris",
-            "pays": "France"
-        }
-    ],
-    "annee": "1998",
-    "children": [
-        {
-            "ville": "Paris",
-            "pays": "France"
-        }
-    ]
-
-}
+[
+    {
+        "id": "1998",
+        "parent": "#",
+        "text": "année 1998"
+    },
+    {
+        "id": "2002",
+        "parent": "#",
+        "text": "année 2002"
+    },
+    {
+        "id": "2006",
+        "parent": "#",
+        "text": "année 2006"
+    },
+    {
+        "id": "2010",
+        "parent": "#",
+        "text": "année 2010"
+    },
+    {
+        "id": "2014",
+        "parent": "#",
+        "text": "année 2014"
+    },
+    {
+        "id": "fr",
+        "parent": "1998",
+        "text": "France"
+    },
+    {
+        "id": "ja",
+        "parent": "2002",
+        "text": "Japon"
+    },
+    {
+        "id": "al",
+        "parent": "2006",
+        "text": "Allemagne"
+    },
+    {
+        "id": "as",
+        "parent": "2010",
+        "text": "Afrique du sud"
+    },
+    {
+        "id": "br",
+        "parent": "2014",
+        "text": "Brasil"
+    },
+    {
+        "id": "v1",
+        "parent": "1998",
+        "text": "Paris"
+    },
+    {
+        "id": "v2",
+        "parent": "2002",
+        "text": "Busan"
+    },
+    {
+        "id": "v3",
+        "parent": "2010",
+        "text": "Freyburg"
+    },
+    {
+        "id": "v4",
+        "parent": "2006",
+        "text": "Boksburg"
+    },
+    {
+        "id": "v5",
+        "parent": "2014",
+        "text": "Rio de janeiro"
+    }
+]
