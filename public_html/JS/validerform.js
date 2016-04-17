@@ -78,6 +78,35 @@ check['acces'] = function () {
     }
 
 };
+check['année'] = function () {
+
+    var acces = document.getElementById('année'),
+            tooltipStyle = getTooltip(acces).style;
+
+    if (acces.options[acces.selectedIndex].value != 'none') {
+        tooltipStyle.display = 'none';
+        return true;
+    } else {
+        tooltipStyle.display = 'inline-block';
+        return false;
+    }
+
+};
+
+check['mois'] = function () {
+
+    var acces = document.getElementById('année'),
+            tooltipStyle = getTooltip(acces).style;
+
+    if (acces.options[acces.selectedIndex].value != 'none') {
+        tooltipStyle.display = 'none';
+        return true;
+    } else {
+        tooltipStyle.display = 'inline-block';
+        return false;
+    }
+
+};
 
 
 check['hauteur'] = function () {
