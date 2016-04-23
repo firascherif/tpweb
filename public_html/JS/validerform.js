@@ -1,5 +1,4 @@
 function deactivateTooltips() {
-
     var tooltips = document.querySelectorAll('.tooltip');
 
     for (var i = 0; i < tooltips.length; i++) {
@@ -13,7 +12,6 @@ function deactivateTooltips() {
 // qui correspond à notre input
 
 function getTooltip(elements) {
-
     while (elements = elements.nextSibling) {
         if (elements.className === 'tooltip') {
             return elements;
@@ -78,9 +76,8 @@ check['acces'] = function () {
     }
 
 };
-check['année'] = function () {
-
-    var acces = document.getElementById('année'),
+check['annee'] = function () {
+    var acces = document.getElementById('annee'),
             tooltipStyle = getTooltip(acces).style;
 
     if (acces.options[acces.selectedIndex].value != 'none') {
@@ -95,7 +92,7 @@ check['année'] = function () {
 
 check['mois'] = function () {
 
-    var acces = document.getElementById('année'),
+    var acces = document.getElementById('mois'),
             tooltipStyle = getTooltip(acces).style;
 
     if (acces.options[acces.selectedIndex].value != 'none') {
@@ -163,13 +160,11 @@ check['adresse'] = function (id) {
 };
 
 (function () {
-
     var myForm = document.getElementById('myForm');
-    var inputs = document.querySelectorAll(
-            'input[type=text]');
+    var inputs = document.querySelectorAll('input[type=text]');
     var select = document.getElementById('acces');
 
-    select.addEventListener('change', function (e) {
+    select.addEventListener('name', function (e) {
         check[e.target.id]();
     }, false);
 
@@ -181,38 +176,28 @@ check['adresse'] = function (id) {
     }
 
     for (var i = 0; i < inputs.length; i++) {
-        inputs[i].addEventListener('change', function (e) {
+        inputs[i].addEventListener('name', function (e) {
             check[e.target.name](); // "e.target" représente 
             // l'input actuellement modifié
         }, false);
-
-    }
-    ;
+    };
 
     myForm.addEventListener('submit', function (e) {
-
         var result = true;
-
         for (var i in check) {
             result = check[i](i) && result;
         }
-
         if (result) {
             window.location = "../navigation/stadeMaj.html";
         }
-
         e.preventDefault();
-
     }, false);
 
     myForm.addEventListener('reset', function () {
-
         for (var i = 0; i < inputsLength; i++) {
             inputs[i].className = '';
         }
-
         deactivateTooltips();
-
     }, false);
 
 })();
