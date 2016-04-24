@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="../../css/style.css" />
-
+    <script src="../../JS/Plugins/jquery-1.10.2.min.js"></script>
+    <script src="../../JS/GoldField.js"></script>
 </head>
 
 <body background="../../Images/background.jpg">
@@ -40,29 +41,60 @@
                 <tbody>
                     <tr>
                         <td><div class="td">Capacité
-                                <div class="tu">80 000 esp.</div>
+                                
+                                <div id="capaciteGoldField" class="tu"></div>
                             </div>
                             <div class="td">Access
-                                <div class="tu">
-                                    <img src="../../Images/metro.png" width="20" height="20" alt=""/> Metro <br>Station Douglas 
+                                <img src="../../Images/metro.png" width="20" height="20" alt=""/> 
+                                <div id ="accesGoldField" class="tu">
+                                    
                                 </div>
-                                <div class="tu">
-                                    <img src="../../Images/Bus_1.png" width="20" height="20" alt=""/>  Bus <br> 48  52  65  90 150 
-                                </div>
+                                
                             </div>    
-                            <div class="td">Environnements
-                                <div class="tu">Eclairage 1.800 Lux</div>
-                            </div>
+                            
                             <div class="td">Taille
-                                <div class="tu"> 100 X 65 m <br> </div>
+                                
+                                <span style="font-size:13"><br> Hauteur </span>
+                                <div id="hauteurGoldField" class="tu"> </div>
+                                <span style ="font-size:13"> Largeur </span>
+                                <div id="largeurGoldField" class="tu"></div>
+                                 
                             </div>  
+                              <div class="td">Date
+                                <span style="font-size:13"><br> Annee/Mois </span>
+                                <div id="anneeGoldField" class="tu">
+                                
+                                 
+                                </div>
+                               <div id="moisGoldField" class="tu">
+                                
+                                 
+                                </div>
+                                
+                                 
+                            </div>  
+                            
+                            
                             <div class="td">Adresse
-                                <div class="tu">2000 Douglas <br> </div>
+                                <div id="adresseGoldField" class="tu"> </div>
                             </div>
                         </td>
-                        <td><div class="tu2">  
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel neque vitae risus semper dapibus sit amet et felis. Cras nulla velit, porta convallis finibus eu, condimentum eget purus. Fusce sit amet ipsum erat. Curabitur ac lectus sed erat luctus consectetur. Aliquam a tortor et augue finibus rutrum condimentum sit amet risus. Ut sollicitudin vitae lorem vel tristique. Aliquam nec vehicula augue, et consequat sem. Vivamus in suscipit massa, eu fringilla nisl. Aliquam ut odio venenatis, lacinia dolor sit amet, sollicitudin odio. Mauris in molestie velit, consequat lobortis ante. Vestibulum ultrices tortor lacus, in sagittis dui congue vel. Proin vitae tempus enim, quis ultrices velit. Etiam semper dapibus sapien quis cursus. Maecenas elementum, tortor eget cursus porta, neque purus hendrerit neque, ac posuere tortor sem id purus. </p><br>
-                                <br> </div></td>
+                        <td >
+                            <span style = "margin-top: 20px; margin-left: 20px ; margin-bottom: 20px; height: 90px; width: 480px"  class ="td">  Environnements recommandé:
+                            
+                                <span style="color:graytex ; width: 500px" class ="tu" >  <br> Eclairage 1.800 Lux </span> 
+                            </span>
+                            
+                            
+                       
+                                    
+                            <div id = "infoGoldField" class="tu2"> 
+                            
+                            
+                            </td>
+                        
+                        
+                        
                     </tr>
 
                 </tbody>

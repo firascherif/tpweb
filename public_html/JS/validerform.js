@@ -1,4 +1,5 @@
 function deactivateTooltips() {
+
     var tooltips = document.querySelectorAll('.tooltip');
 
     for (var i = 0; i < tooltips.length; i++) {
@@ -12,6 +13,7 @@ function deactivateTooltips() {
 // qui correspond à notre input
 
 function getTooltip(elements) {
+
     while (elements = elements.nextSibling) {
         if (elements.className === 'tooltip') {
             return elements;
@@ -77,6 +79,7 @@ check['acces'] = function () {
 
 };
 check['annee'] = function () {
+
     var acces = document.getElementById('annee'),
             tooltipStyle = getTooltip(acces).style;
 
@@ -160,11 +163,13 @@ check['adresse'] = function (id) {
 };
 
 (function () {
+
     var myForm = document.getElementById('myForm');
-    var inputs = document.querySelectorAll('input[type=text]');
+    var inputs = document.querySelectorAll(
+            'input[type=text]');
     var select = document.getElementById('acces');
 
-    select.addEventListener('name', function (e) {
+    select.addEventListener('change', function (e) {
         check[e.target.id]();
     }, false);
 
@@ -176,28 +181,38 @@ check['adresse'] = function (id) {
     }
 
     for (var i = 0; i < inputs.length; i++) {
-        inputs[i].addEventListener('name', function (e) {
+        inputs[i].addEventListener('change', function (e) {
             check[e.target.name](); // "e.target" représente 
             // l'input actuellement modifié
         }, false);
-    };
+
+    }
+    ;
 
     myForm.addEventListener('submit', function (e) {
+
         var result = true;
+
         for (var i in check) {
             result = check[i](i) && result;
         }
+
         if (result) {
             window.location = "../navigation/stadeMaj.html";
         }
+
         e.preventDefault();
+
     }, false);
 
     myForm.addEventListener('reset', function () {
+
         for (var i = 0; i < inputsLength; i++) {
             inputs[i].className = '';
         }
+
         deactivateTooltips();
+
     }, false);
 
 })();

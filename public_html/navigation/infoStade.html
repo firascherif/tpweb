@@ -4,92 +4,139 @@
         <title>TP1</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+
         <link rel="stylesheet" type="text/css" href="../css/form.css" />
         <link rel="stylesheet" type="text/css" href="../css/style.css" />
-        <script src="JS/Plugins/jquery-1.10.2.min.js"></script>
+        <script src="../JS/Plugins/jquery-1.10.2.min.js"></script>
+        <script src="../JS/validationInforStats.js"></script>
     </head>
 
     <body background="../Images/background.jpg">
-        <div class="centre">
-            <form id="myForm" method="get">
-                <h3>Informations: </h3>
 
-                <label class="form_col" for="Name">Nom du stade:</label>
-                <input name="Name" id="Name" type="text" />
-                <span class="tooltip">pas moins de 2 caractères</span>
-                <br /><br />
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div  class="col-sm-2 text-right-side">
+                    <a  href="../index.html"><img src="../Images/logo.jpg" class="img-circle"  width="60" height="60"></a>
+                </div>
 
-                <label class="form_col" for="capacite">Capacité :</label>
-                <input name="capacite" id="capacite" type="text" />
-                <span class="tooltip">entre 50000 et 120000</span>
-                <br /><br />
+            </div>
+        </nav>
 
-                <label class="form_col" for="acces">Acces :</label>
-                <select name="acces" id="acces">
-                    <option value="none">Sélectionnez votre station métro</option>
-                    <option value="pa">Place des arts</option>
-                    <option value="br">Berry</option>
-                    <option value="pi">pieXX</option>
-                </select>
-                <span class="tooltip">Selectionner une station</span>
-                <br/><br/>
+        <div class="container-fluid text-center">    
+            <div class="row content">
+                <div class="col-sm-2 sidenav"></div>
+                <div class="col-sm-10 text-left"> 
+                    <form id="myForm" method="get" action="stadeMaj.html" >
+                        <h3>Informations: </h3>
 
-                <label class="form_col" for="taille">Hauteur :</label>
-                <input name="hauteur" id="hauteur" type="text" />
-                <span class="tooltip">hauteur ne dépasse pas 300</span>
-                <br/><br/>
-                <label class="form_col" for="taille">Largeur :</label>
-                <input name="largeur" id="largeur" type="text" />
-                <span class="tooltip">largeur ne dépasse pas 300</span>
-                <br /><br />
+                        <label class="form_col" for="Name">Nom du stade:</label>
+                        <select name= "Name "id="listeStades">
+                            <option>GoldField</option>
+                            <option>Olympique Richelieu</option> 
+                            <option>SaltMountain</option>
+                            <option>SuperKick</option>
+                            <option>Ultima</option>
+                            
+                        </select>
+                        
+                        <span class="tooltip">Un nom ne peut pas faire moins de 2 caractères</span>
+                        <br /><br />
 
-                <label class="form_col" for="date">Date:</label>
-                <select name="annee" id="annee">
-                    <option value="none">Année</option>
-                    <option value="2016">2016</option>
-                    <option value="2015">2015</option>
-                    <option value="2014">2014</option>
-                    <option value="2014">2013</option>
-                    <option value="2012">2012</option>
-                    <option value="2011">2011</option>
-                    <option value="2010">2010</option>
-                </select>
-                <select name="mois" id="mois">
-                    <option value="none">mois</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-                <span class="tooltip">Selectionner une date</span>
-                <br /><br />
+                        <label class="form_col" for="capacite">Capacité :</label>
+                        <input name="capacite" id="capacite" type="text" />
+                        <span class="tooltip">La capacité doit être compris entre 50000 et 120000</span>
+                        <br /><br />
 
-                <label class="form_col" for="pwd2">Adresse :</label>
-                <input name="adresse" id="adresse" type="text" />
-                <span class="tooltip">L'adresse doit être remplie</span>
-                <br /><br />
+                        <label class="form_col" for="acces">Acces :</label>
+                        <select name="acces" id="acces">
+                            <option value="none">Sélectionnez votre station métro</option>
+                            <option value="pa">Place des arts</option>
+                            <option value="br">Berry</option>
+                            <option value="pi">pieXX</option>
+                        </select>
+                        <br /><br />
 
-                <h3>Informations supplémentaires: </h3>
-                <br/>
-                <label class="form_col" for="informations">Informations:</label>
-                <input name="informations" id="informations" type="text" />
+                        <label class="form_col" for="taille">Hauteur :</label>
+                        <input name="hauteur" id="hauteur" type="text" />
+                        <span class="tooltip">La hauteur ne doit pas dépasser 300</span>
+                        <label class="form_col" for="taille">Largeur :</label>
+                        <input name="largeur" id="largeur" type="text" />
+                        <span class="tooltip">La largeur ne doit pas dépasser 300</span>
 
-                <br/><br/>
+                        <br /><br />
 
-                <span class="form_col"></span>
-                <input type="submit" value="Valider"/> <input type="reset" value="Réinitialiser le formulaire" />
+                        <label class="form_col" for="date">Date:</label>
+                        <select name="annee" id="annee">
+                            <option value="none">Année</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2014">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
+                        </select>
+                        <select name="mois" id="mois">
+                            <option value="none">mois</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <br /><br />
+                        
+                        
+                        <label class="form_col" for="pwd2">Adresse :</label>
+                        <input name="adresse" id="adresse" type="text" />
+                        <span class="tooltip">L'adresse doit être remplie</span>
+                        <br /><br />
 
-            </form>
-        </div>  
+                        <h3>Informations supplémentaires: </h3>
+                        <br /><br />
+                        <label class="form_col" for="informations">Informations:</label>
+                        <input name="informations" id="informations" type="text" />
 
+                        <br /><br />
+
+                        <span class="form_col"></span>
+                        <input type="submit" value="Valider"/> <input type="reset" value="Réinitialiser le formulaire" />
+
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-md-4">
+                            <p>développé dans le cadre du cours 
+                                <a href="http://www.etudier.uqam.ca/cours?sigle=INF2005" >INF2005</a></p>
+                            à <a href="http://www.uqam.ca" >l’UQAM</a>
+                        </div>
+                        <div class="footer-col col-md-4"> Copyright &copy; 2016</div>
+                        <div class="footer-col col-md-4">
+                            <p>Realiser par : <a href="firas-cherif@hotmail.com">Firas CHERIF</a><span style="color:white;"> et </span><a href="fecteau-dorval.carolane@courrier.uqam.ca">Carolane Fecteau-Dorval</a></p>
+                            <p><a href="http://www.firascherif.com" >www.firascherif.com</a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script src="../JS/validerform.js"></script>
+
     </body>
 </html>

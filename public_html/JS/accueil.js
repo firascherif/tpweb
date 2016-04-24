@@ -1,5 +1,5 @@
 $( window ).load(function(){
-var admin= ["admin","Inf2005"];
+var admin ={"user":"admin","pass":"Inf2005"};
 var utilisateurs = JSON.parse(localStorage.getItem("logins"));
 var estPresent = false;
 if(utilisateurs == null){
@@ -7,15 +7,16 @@ if(utilisateurs == null){
 }
  if(utilisateurs != []){
      for(var i = 0; i < utilisateurs.length; i ++){
-         if(utilisateurs[i][0] == admin[0] && utilisateurs[i][1] == admin[1]){
-             estPresent = true;
+         if(utilisateurs[i].user = admin.user  && utilisateurs[i].pass == admin.pass){
+                estPresent = true;       
          }
      }
 }
 if(!estPresent){
+   
     utilisateurs.push(admin);
-    localStorage.setItem("logins",utilisateurs);
-}
+    localStorage.setItem("logins",JSON.stringify(utilisateurs));
+}  
 
 });
 
