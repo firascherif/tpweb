@@ -28,17 +28,15 @@ function getTooltip(elements) {
 var check = {}; // On met toutes nos fonctions dans un objet littéral
 
 
-check['Name'] = function (id) {
+check['listeStades'] = function (id) {
 
-    var name = document.getElementById(id);
-    var tooltipStyle = getTooltip(name).style;
+    var listeStades = document.getElementById('listeStades'),
+            tooltipStyle = getTooltip(listeStades).style;
 
-    if (name.value.length >= 2) {
-        name.className = 'correct';
+    if (listeStades.options[listeStades.selectedIndex].value != 'none') {
         tooltipStyle.display = 'none';
         return true;
     } else {
-        name.className = 'incorrect';
         tooltipStyle.display = 'inline-block';
         return false;
     }
